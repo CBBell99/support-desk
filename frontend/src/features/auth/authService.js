@@ -1,6 +1,6 @@
 import axios from "axios"
 
-const API_URL = "api/users"
+const API_URL = "/api/users"
 
 // Register User
 const register = async (userData) => {
@@ -16,7 +16,8 @@ const register = async (userData) => {
 const logout = () => localStorage.removeItem('user')
 
 const authService = {
-  register
+  register,
+  logout
 }
 
 export default authService;
