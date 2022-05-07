@@ -1,7 +1,8 @@
 import { useEffect } from "react";
 import { toast } from "react-toastify";
 import { useSelector, useDispatch } from "react-redux";
-import { getTicket, reset, closeTicket } from "../features/tickets/ticketSlice";
+import { getTicket, closeTicket } from "../features/tickets/ticketSlice";
+import { getNotes, reset as notesReset } from "react-router-dom";
 import { useParams, useNavigate } from "react-router-dom";
 import BackButton from "../components/BackButton";
 import Spinner from "../components/Spinner";
