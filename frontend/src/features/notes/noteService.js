@@ -23,7 +23,7 @@ const createNote = async (noteText, ticketId, token) => {
     }
   }
 
-  const response = await axios.get(API_URL + ticketId + '/notes', {
+  const response = await axios.post(API_URL + ticketId + '/notes', {
     text: noteText
   }, config)
 
